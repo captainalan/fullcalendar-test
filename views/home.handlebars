@@ -1,1 +1,22 @@
-<h1>Example App: Home</h1>
+<h1>Example App: Calendar is Working!</h1>
+<p>
+    Text from backend:
+    {{thing1}}
+    {{thing2}}
+</p>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [ 'dayGrid' ]
+    });
+
+    calendar.render();
+    });
+
+</script>
+
+<!-- Actual calendar should display here -->
+<div id='calendar'></div>
